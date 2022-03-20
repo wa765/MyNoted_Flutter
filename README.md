@@ -11,4 +11,5 @@ ketik di gitbash codingan flutter (flutter build apk) --> ke folder build ---> f
 ## Tampilan Sekilas
 <img width="960" alt="2022-03-20" src="https://user-images.githubusercontent.com/74824846/159157059-d6a340cf-25ba-4a9a-bb35-042eb7c8accd.png">
 
-## Tampilan Sekilas di dalam codingan ada comment untuk memudahkan temen" dalam mengetahui fungsi" widget di flutter<img width="960" alt="2022-03-20 (1)" src="https://user-images.githubusercontent.com/74824846/159157176-db4800f5-e83d-4b1d-ba8e-af984948f341.png">
+## Tampilan Sekilas di dalam codingan ada comment untuk memudahkan temen" dalam mengetahui fungsi" widget di flutter
+<img width="960" alt="2022-03-20 (1)" src="https://user-images.githubusercontent.com/74824846/159157176-db4800f5-e83d-4b1d-ba8e-af984948f341.png">

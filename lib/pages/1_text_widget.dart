@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mynote1/pages/2_row_column.dart';
 
 class TextWidget extends StatelessWidget {
   const TextWidget({Key? key}) : super(key: key);
@@ -7,7 +8,7 @@ class TextWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Ini Widget Text"),
+        title: Text(" 1 . Ini Widget Text"),
       ),
       body: Center(
         child: Column(
@@ -80,6 +81,44 @@ class TextWidget extends StatelessWidget {
                     fontStyle: FontStyle.italic),
               ),
             ),
+            const SizedBox(
+              height: 60,
+            ),
+            // Abaikan Kodingan dibawah ini
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Container(
+                  width: 100,
+                  height: 40,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(primary: Colors.grey),
+                    onPressed: () {},
+                    child: Text("Back"),
+                  ),
+                ),
+                Container(
+                  width: 100,
+                  height: 40,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      final snackBar = SnackBar(
+                        content: Text("Loadinggg..."),
+                        backgroundColor: Colors.blue,
+                      );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (contex) => const RowColumn(),
+                        ),
+                      );
+                      ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                    },
+                    child: Text("Next"),
+                  ),
+                ),
+              ],
+            )
           ],
         ),
       ),
